@@ -1,0 +1,22 @@
+{
+  "name": "ts-tensor",
+  "version": "1.0.0",
+  "description": "Typescript Tensorflow Project",
+  "keywords": [],
+  "scripts": {
+    "start": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GmanPark@2019",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmanio/ts-tensor.git"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^0.14.1"
+  },
+  "bugs": {
+    "url": "https://github.com/gmanio/ts-tensor/issues"
+  },
+  "homepage": "https://github.com/gmanio/ts-tensor#readme"
+}
