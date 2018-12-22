@@ -16,9 +16,17 @@ INFO:tensorflow:Converted 378 variables to const ops.
 
 ```
 
-## 
-python label_image.py --image ./test_img/sample_daisy.jpg --graph /tmp/output_graph.pb --labels /tmp/output_labels.txt
+## Show Output
+```
+$>python label_image.py --image ./test_img/sample_daisy.jpg --graph /tmp/output_graph.pb --labels /tmp/output_labels.txt
+
+2018-12-23 08:46:37.844604: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+daisy 0.9978969
+sunflowers 0.0011470014
+dandelion 0.0008095624
+roses 7.724412e-05
+tulips 6.9350484e-05
+```
 
 ## Reference
-
 https://github.com/golbin/TensorFlow-Tutorials/tree/master/11%20-%20Inception
