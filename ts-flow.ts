@@ -15,4 +15,5 @@ child.stderr.on('data', function(data) {
 child.on('close', function(code) {
     console.log('closing code: ' + code);
     //Here you can get the exit code of the script
+    //Here you can get the exit code of the script
 });
