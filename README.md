@@ -28,5 +28,7 @@ roses 7.724412e-05
 tulips 6.9350484e-05
 ```
 
+
 ## Reference
 https://github.com/golbin/TensorFlow-Tutorials/tree/master/11%20-%20Inception
+http://www.image-net.org/
