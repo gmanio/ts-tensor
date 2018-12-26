@@ -28,6 +28,15 @@ roses 7.724412e-05
 tulips 6.9350484e-05
 ```
 
+## Changing Model ( python -> web )
+```
+tensorflowjs_converter \
+   —input_format=tf_frozen_model \
+   —output_node_names='final_result' \
+   ./tf_files/outbody.pb \
+   ./tf_files/web_model
+ ```
+
 
 ## Reference
 https://github.com/golbin/TensorFlow-Tutorials/tree/master/11%20-%20Inception
