@@ -7,7 +7,7 @@ This example using Tensorflow Inception V3.
 Image retrain command
 
 ```
-$> python retrain.py --image_dir flower_photos/
+$> sudo python retrain.py --image_dir flower_photos/ --output_graph ./dist/output_graph.pb
 
 #result
 INFO:tensorflow:Restoring parameters from /tmp/_retrain_checkpoint
@@ -15,6 +15,13 @@ INFO:tensorflow:Froze 378 variables.
 INFO:tensorflow:Converted 378 variables to const ops.
 
 ```
+
+## Change WEB MODEL
+sudo tensorflowjs_converter \
+    --input_format=tf_frozen_model \
+    --output_node_names='final_result' \
+    ./dist/output_graph.pb \
+    ./mobilenet/web_model
 
 ## Show Output
 ```
@@ -32,3 +39,4 @@ tulips 6.9350484e-05
 ## Reference
 https://github.com/golbin/TensorFlow-Tutorials/tree/master/11%20-%20Inception
 http://www.image-net.org/
+https://reiinakano.github.io/arbitrary-image-stylization-tfjs/
