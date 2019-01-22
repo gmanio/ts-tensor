@@ -7,7 +7,11 @@ This example using Tensorflow Inception V3.
 Image retrain command
 
 ```
+<<<<<<< HEAD
 $> sudo python retrain.py --image_dir flower_photos/ --output_graph ./dist/output_graph.pb
+=======
+$> python retrain.py --image_dir flower_photos/ --how_many_training_steps 100 --output_labels ./tensor/output_labels.txt --output_graph ./tensor/output_graph.pb --bottleneck_dir ./tensor/bottleneck --saved_model_dir ./tensor
+>>>>>>> [feature] added models
 
 #result
 INFO:tensorflow:Restoring parameters from /tmp/_retrain_checkpoint
@@ -40,8 +44,17 @@ tulips 6.9350484e-05
 tensorflowjs_converter \
    —input_format=tf_frozen_model \
    —output_node_names='final_result' \
-   ./tf_files/outbody.pb \
-   ./tf_files/web_model
+   ./tensor/output_graph.pb \
+   ./tensor/web_model
+ ```
+
+ ```window10
+tensorflowjs_converter \
+   --input_format tf_frozen_model \
+   --output_node_names final_result \
+   ./tensor/output_graph.pb \
+   ./tensor/web_model
+
  ```
 
 

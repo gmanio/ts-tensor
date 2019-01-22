@@ -532,4 +532,9 @@ ASALocalRun/
 # BeatPulse healthcheck temp database 
 healthchecksdb
 
+<<<<<<< HEAD
 dist
+=======
+# tensorflow model
+tensor
+>>>>>>> [feature] added models

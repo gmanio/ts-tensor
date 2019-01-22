@@ -1,7 +1,15 @@
 // import React from 'react';
-const ReactDOM = require('react-dom');
+// import { render } from 'react-dom';
+// import * as tf from '@tensorflow/tfjs';
+// import { loadFrozenModel } from '@tensorflow/tfjs-converter';
+
+class Greetings extends React.Component {
+  render() {
+    return React.createElement('h1', null, 'Greetings, ' + this.props.name + '!');
+  }
+}
 
 ReactDOM.render(
-    <h1>Hello, world!</h1>,
-    document.getElementById('root')
-  );
+  React.createElement(Greetings, { name: 'Park' }),
+  document.getElementById('app')
+);
